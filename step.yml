@@ -1,7 +1,7 @@
 title: Heroku Deploy
 summary: Deploy to Heroku
 description: |-
-  The Step deploys your app to [Heroku](https://heroku.com) using your Heroku API Token.
+  The Step deploys your webapp to [Heroku](https://heroku.com) using your Heroku API Token.
   The Step also installs the [Heroku Toolbelt](https://toolbelt.heroku.com) if it's not yet installed and logs in with the Toolbelt.
 
   ### Configuring the Step
