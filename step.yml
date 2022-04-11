@@ -1,11 +1,23 @@
 title: Heroku Deploy
 summary: Deploy to Heroku
 description: |-
-  Deploy to [Heroku](https://heroku.com).
+  The Step deploys your app to [Heroku](https://heroku.com) using your Heroku API Token.
+  The Step also installs the [Heroku Toolbelt](https://toolbelt.heroku.com) if it's not yet installed and logs in with the Toolbelt.
 
-  This step installs the [Heroku Toolbelt](https://toolbelt.heroku.com)
-  if it's not yet installed, and it also **logs in** with the Toolbelt
-  if you're not logged in already.
+  ### Configuring the Step
+
+  1. Add your Heroku API Token to the **Heroku API Token** input.
+     If you have the Heroku Toolbelt installed, you can get your Heroku API Token by running `heroku auth:token` in your Terminal/command line.
+  1. Add your Heroku App ID to the **Heroku App ID** input.
+     You can find your Heroku App ID on your [Heroku Dashboard](https://dashboard.heroku.com/apps).
+  1. Select `true` in the **Force push to Heroku repository?** input to force push to the Heroku repository.
+
+  ### Useful links
+
+  * [Heroku API guide](https://devcenter.heroku.com/articles/platform-api-quickstart)
+  * [Heroku Dashboard](https://dashboard.heroku.com/apps)
+  * [Installing the Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+
 website: https://github.com/bitrise-steplib/steps-heroku-deploy
 source_code_url: https://github.com/bitrise-steplib/steps-heroku-deploy
 support_url: https://github.com/bitrise-steplib/steps-heroku-deploy/issues
